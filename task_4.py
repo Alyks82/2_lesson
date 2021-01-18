@@ -7,7 +7,7 @@ while True:
     if income_string.count(' ') == 0 or len(income_string) < 3: # исключаем отсутствие пробелов и возможность разделения
         continue
     else:
-        n = 1               # выглядит коряво. Хотел через перебор значений, но так показалось не лучше.
+        n = 1               # выглядит некрасиво. Хотел через перебор значений, но так показалось не лучше.
         list = income_string.split(' ')
         for word in list:
             word = word[0:10] if len(word) > 9 else word # если честно, не понял почему 0:10 надо,
